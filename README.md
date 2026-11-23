@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/alaorneto/medvita-business/actions/workflows/ci.yml/badge.svg)](https://github.com/alaorneto/medvita-business/actions/workflows/ci.yml)
 
-Medvita Business é o pacote para clínicas (pessoa jurídica) da suíte Medvita, sobre o [Skeleton](https://github.com/alaorneto/skeleton). Ele se instala por cima do [medvita-core](https://github.com/alaorneto/medvita-core) e do [Medvita Pro](https://github.com/alaorneto/medvita-pro); cada app é publicada como um pacote `.skapp` assinado, contratada sozinha e ativada por organização.
+Medvita Business é o pacote para clínicas (pessoa jurídica) da suíte Medvita, sobre o [Skeleton](https://github.com/alaorneto/skeleton). Ele se instala por cima do [Medvita Core](https://github.com/alaorneto/medvita-core) e do [Medvita Pro](https://github.com/alaorneto/medvita-pro); cada app é publicada como um pacote `.skapp` assinado, contratada sozinha e ativada por organização.
 
 ## Apps planejadas
 
@@ -15,8 +15,12 @@ Nenhuma app foi implementada ainda: cada uma nasce no epic dela (veja as issues 
 | `med_insights` | `io.medvita.insights` | Indicadores | Indicadores de gestão a partir dos eventos das apps |
 | `med_inventory` | `io.medvita.inventory` | Estoque | Materiais, medicamentos e vacinas com lote e validade |
 | `med_interop` | `io.medvita.interop` | Interoperabilidade | RNDS, exportação FHIR e resultados de laboratório |
+| `med_payout` | `io.medvita.payout` | Repasse | Repasse ao profissional por regra, com fechamento por período |
+| `med_packages` | `io.medvita.packages` | Pacotes | Pacotes de sessões, planos recorrentes e orçamentos |
+| `med_portal` | `io.medvita.portal` | Portal do paciente | Agendamento online, pré-consulta, documentos e recibos |
+| `med_assistant` | `io.medvita.assistant` | Assistente | Transcrição e rascunho do atendimento (opcional, depois de decisão de LGPD) |
 
-O núcleo e as apps do medvita-core não são copiados para cá: entram no ambiente como dependências instaladas.
+O núcleo e as apps do Medvita Core não são copiados para cá: entram no ambiente como dependências instaladas.
 
 ## Como desenvolver
 

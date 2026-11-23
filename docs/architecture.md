@@ -11,12 +11,12 @@ Medvita Business   (clínica, pessoa jurídica)
         ▲
 Medvita Pro        (avançado)
         ▲
-medvita-core       (pacientes, agenda, prontuário, financeiro)
+Medvita Core       (pacientes, agenda, prontuário, financeiro)
         ▲
 Skeleton           (núcleo)
 ```
 
-A seta aponta para quem se instala por cima. Uma camada usa a de baixo pelo `service_api`, pelos eventos de domínio e pelos registries (`docs/extension-points.md` do medvita-core); a de baixo nunca conhece a de cima.
+A seta aponta para quem se instala por cima. Uma camada usa a de baixo pelo `service_api`, pelos eventos de domínio e pelos registries (`docs/extension-points.md` do Medvita Core); a de baixo nunca conhece a de cima.
 
 ## Árvore do repositório
 
@@ -27,7 +27,7 @@ medvita-business/                <- raiz do repositório git; não é pacote Pyt
   .claude/skills/dev-workflow/
   docs/                <- documentação do pacote
   tools/  tests/       <- chegam com o epic de bootstrap
-  med_<nome>/          <- uma app por diretório, no formato das apps do medvita-core
+  med_<nome>/          <- uma app por diretório, no formato das apps do Medvita Core
 ```
 
 ## Apps planejadas
@@ -39,5 +39,9 @@ medvita-business/                <- raiz do repositório git; não é pacote Pyt
 | `med_insights` | `io.medvita.insights` | Indicadores | Agenda médica, Financeiro |
 | `med_inventory` | `io.medvita.inventory` | Estoque | Prontuário, Financeiro |
 | `med_interop` | `io.medvita.interop` | Interoperabilidade | Pacientes, Prontuário |
+| `med_payout` | `io.medvita.payout` | Repasse | Financeiro, Agenda médica |
+| `med_packages` | `io.medvita.packages` | Pacotes | Financeiro, Agenda médica |
+| `med_portal` | `io.medvita.portal` | Portal do paciente | Pacientes, Agenda médica, Prontuário, Financeiro, Pagamento online (Pro, opcional) |
+| `med_assistant` | `io.medvita.assistant` | Assistente | Prontuário |
 
 Cada dependência é declarada em `dependencies` do manifesto da app, com a faixa da versão instalada.
